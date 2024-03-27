@@ -22,10 +22,16 @@ const AnimalContainer = () => {
         setAnimals(animals.toSpliced(animalIndex, 1));
     }
 
+    const clearFavouritePictures = () => {
+        setFavouritePictures([]);
+    }
+
     return (
         <>
             <AnimalList animals={animals} favouritePicture={favouritePicture} />
+            <h1>Favourite Pictures</h1>
             <AnimalList animals={favouritePictures} />
+            <input type="button" value="Clear" onClick={clearFavouritePictures} />
         </>
     );
 }

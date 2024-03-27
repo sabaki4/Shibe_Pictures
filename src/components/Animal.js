@@ -6,7 +6,7 @@ const Animal = ({animal, favouritePicture}) => {
 
     return ( 
         <>
-        <img src={animal}/>
+        <img src={animal} alt="Here is a cute Shibe"/>
         <button onClick={handleClick}>❤️</button>
         </>
      );
