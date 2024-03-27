@@ -7,7 +7,7 @@ const AnimalContainer = () => {
     const [favouritePictures, setFavouritePictures] = useState([]);
 
     const loadAnimal = async () => {
-        const response = await fetch(" http://shibe.online/api/shibes?count=21&urls=true&httpsUrls=true");
+        const response = await fetch(" http://shibe.online/api/shibes?count=24&urls=true&httpsUrls=true");
         const animalJSON = await response.json();
         setAnimals(animalJSON);
     }
