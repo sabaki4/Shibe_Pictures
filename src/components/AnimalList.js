@@ -1,9 +1,9 @@
 import Animal from "./Animal";
 
-const AnimalList = ({ animals }) => {
+const AnimalList = ({ animals, favouritePicture }) => {
 
     const mapAnimals = animals.map((animal, index) => {
-        return <Animal key={index} animal={animal} />
+        return <Animal key={index} animal={animal} favouritePicture={favouritePicture} />
     });
 
     return (
