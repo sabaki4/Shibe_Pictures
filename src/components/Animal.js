@@ -1,6 +1,8 @@
 const Animal = ({animal}) => {
+
     return ( 
         <>
+        <img src={animal}/>
         </>
      );
 }
