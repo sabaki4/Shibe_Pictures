@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-import Animal from "../components/Animal";
+import AnimalList from "../components/AnimalList";
 
 const AnimalContainer = () => {
 
-    const [animals, setAnimals] = useState("");
+    const [animals, setAnimals] = useState([]);
 
     const loadAnimal = async () => {
         const response = await fetch("http://shibe.online/api/shibes?count=[1-100]&urls=[true/false]&httpsUrls=[true/false]");
@@ -17,7 +17,7 @@ const AnimalContainer = () => {
 
     return (
         <>
-            <Animal animal={animals} />
+            <AnimalList animals={animals} />
         </>
     );
 }

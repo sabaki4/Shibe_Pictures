@@ -1,4 +1,4 @@
-const Animal = () => {
+const Animal = ({animal}) => {
     return ( 
         <>
         </>
